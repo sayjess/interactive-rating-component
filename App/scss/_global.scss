@@ -1,0 +1,26 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+body{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Overpass";
+}
+
+// h2{
+//     margin: 0;
+//     padding: 0;
+// }
