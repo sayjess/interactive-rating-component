@@ -25,7 +25,8 @@ img{
     padding: 2px;
 }
 
-ul{
+form{
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -37,8 +38,25 @@ ul{
     padding: 20px 5px;
 }
 
-li {
+form{
     display: flex;
+    flex-direction: column;
+}
+
+.radio{
+    display: none;
+}
+
+.radio-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+
+label {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: $lightBlue;
@@ -47,15 +65,16 @@ li {
     border-radius: 50%;
     
 }
-li:hover{
+label:hover{
     background-color: $orange;
 }
 
-li{
-    background-color: $lightBlue;
+
+.active {
+    background-color: $lightGrey;
 }
 
-button {
+.submit {
     background-color: $orange;
     color: $white;
     height: 40px;
@@ -66,7 +85,7 @@ button {
     text-transform: uppercase;
 }
 
-button:hover {
+.submit:hover {
     background-color: $white;
     color: $orange;
     cursor: pointer;
