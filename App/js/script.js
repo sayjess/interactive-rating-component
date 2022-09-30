@@ -27,13 +27,13 @@ activeRadio = () => {
 
 //create a function that will hold the value that was submitted
 function confirmation (){
+  if (placeholder != null){
     const container = document.querySelector(".container");
     while (container.hasChildNodes()) {    //will remove first child until none left
         container.removeChild(container.firstChild);
-        container.classList.remove("container");
     }
     createBody();
-        
+  } 
 }
 
 function createBody(){
@@ -54,7 +54,7 @@ function createBody(){
     }
 
     function containerConfirmed(){
-      div.classList.add("container_confirmed");
+      div.style.setProperty('align-items', 'center');
     }
 
     function createImage(){
