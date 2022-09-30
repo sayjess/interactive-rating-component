@@ -9,6 +9,14 @@
     color: $white ;
     background: rgb(37,45,55);
     background: linear-gradient(180deg, rgba(37,45,55,1) 56%, rgba(18,20,23,1) 100%);
+
+    @media screen and (max-width: 425px){
+        height: 300px;
+        width: 70vw;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+    }
 }
 
 .img_wrapper {
@@ -24,6 +32,18 @@ img{
     height: 16px;
     padding: 2px;
 }
+h1{
+    @media screen and (max-width: 425px) {
+        font-size: 25px; 
+    }
+}
+p{
+    color: $mediumGrey;
+    @media screen and (max-width: 425px) {
+        font-size: 80%; 
+    }
+}
+
 
 form{
 
@@ -41,6 +61,7 @@ form{
 form{
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
 }
 
 .radio{
@@ -51,6 +72,7 @@ form{
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 
@@ -63,6 +85,14 @@ label {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    color: $mediumGrey;
+
+    @media screen and (max-width: 425px){
+        height: 35px;
+        width: 35px;
+        font-size: 13px;
+        
+    }
     
 }
 label:hover{
@@ -81,12 +111,48 @@ label:hover{
     border-radius: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    width: 350px;
+    width: 100%;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    border-color: none;
+    @media screen and (max-width: 425px){
+        height: 35px;
+        font-size: 10px;        
+    }
 }
 
 .submit:hover {
     background-color: $white;
     color: $orange;
     cursor: pointer;
+}
+
+.thank-you-img{
+    width: 162px;
+    height: 108px;
+}
+
+.rating {
+    background-color: $lightBlue;
+    color: $orange;
+    height: 25px;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.thank-you{
+    margin-bottom: 0;
+}
+
+.closing{
+    text-align: center;
+    color: $lightGrey;
+    font-size: 14px;
+    margin-bottom: 0;
 }
